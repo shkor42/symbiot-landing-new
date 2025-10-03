@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Symbiot - Новый Сайт</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Symbiot - Локальная AI-система для бизнеса. Анализ звонков, продаж и данных.">
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f4f4f4; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #007bff, #0056b3); color: white; text-align: center; padding: 60px 20px; }
+        h1 { margin: 0; font-size: 2.5em; }
+        p { font-size: 1.2em; }
+        section { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
+        .features { display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .feature { width: 30%; min-width: 250px; margin: 15px; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .feature:hover { transform: translateY(-5px); }
+        button { background: #28a745; color: white; border: none; padding: 15px 30px; font-size: 1.1em; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #218838; }
+        #pricing { background: #e9ecef; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; padding: 10px; background: white; border-radius: 5px; }
+        footer { background: #333; color: white; text-align: center; padding: 30px; }
+        @media (max-width: 768px) { .feature { width: 100%; } h1 { font-size: 2em; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Symbiot - Ваш ИИ-Партнёр для Бизнеса</h1>
+        <p>Локальная AI-система для анализа звонков, переписки и продаж. 100% конфиденциальность без облака.</p>
+        <br>
+        <button onclick="document.getElementById('contacts').scrollIntoView();">Запросить Демо</button>
+    </header>
+    
+    <section id="problems">
+        <h2>Проблемы, которые мы решаем</h2>
+        <ul>
+            <li>Тонуть в рутине и ручном управлении командой</li>
+            <li>Недоверие к сотрудникам и отсутствие контроля</li>
+            <li>Неполная картина данных о клиентах и продажах</li>
+        </ul>
+    </section>
+    
+    <section id="solution">
+        <h2>Решение от Symbiot</h2>
+        <p>Symbiot — это серверная AI-система, которая работает локально в вашем офисе. Мы анализируем звонки (транскрипция на белорусском/русском), переписку, продажи и даём actionable insights: прогнозы, рекомендации, персональные ассистенты для команды.</p>
+        <p>Техстек: Whisper для транскрипции, Local LLM для анализа, OpenWebUI для чата.</p>
+    </section>
+    
+    <section id="features">
+        <h2>Ключевые Возможности</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Транскрипция и Анализ Звонков</h3>
+                <p>Автоматическая расшифровка на BY/RU, распознавание эмоций, выявление паттернов в общении.</p>
+            </div>
+            <div class="feature">
+                <h3>Анализ Продаж и Переписки</h3>
+                <p>Прогнозы продаж, выявление болевых точек клиентов, рекомендации по оптимизации.</p>
+            </div>
+            <div class="feature">
+                <h3>Персональные AI-Ассистенты</h3>
+                <p>Чат-интерфейс для команды: быстрые insights, автоматизация рутины.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing">
+        <h2>Ценообразование и Установка</h2>
+        <p><strong>Early Adopter Программа:</strong> 70% скидка на полный пакет (оборудование + установка + 6 месяцев поддержки). <strong>Осталось 7/10 мест!</strong></p>
+        <p>Установка: 5 дней. Привозим готовый сервер (Intel/AMD + NVIDIA RTX 4090), настраиваем, обучаем команду.</p>
+        <p>Стандартный тариф стартует с марта 2025.</p>
+    </section>
+    
+    <section id="testimonials">
+        <h2>Что говорят Клиенты</h2>
+        <div class="features">
+            <div class="feature">
+                <p>"Снижение возвратов на 30%, рост прибыли!" — Владелец магазина электроники.</p>
+            </div>
+            <div class="feature">
+                <p>"AI видит то, что мы упускали в звонках." — Менеджер по продажам.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacts">
+        <h2>Свяжитесь с Нами</h2>
+        <p>Телефон: +375 (33) 688-75-18</p>
+        <p>Telegram: <a href="https://t.me/SymbiotAIbot">@SymbiotAIbot</a></p>
+        <p>Email: symbiot@cil.by</p>
+        <button onclick="alert('Заявка отправлена! Мы свяжемся скоро.')">Отправить Заявку</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Symbiot. Создано с помощью Cody AI. Все права защищены.</p>
+    </footer>
+
+    <script>
+        // Простая навигация
+        console.log('Новый Symbiot сайт готов!');
+    </script>
+</body>
+</html>
