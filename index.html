@@ -1,102 +1,163 @@
-<html>
+<html lang="ru">
 <head>
-    <title>Symbiot - Новый Сайт</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Symbiot - Локальная AI-система для бизнеса. Анализ звонков, продаж и данных.">
-    <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f4f4f4; line-height: 1.6; color: #333; }
-        header { background: linear-gradient(135deg, #007bff, #0056b3); color: white; text-align: center; padding: 60px 20px; }
-        h1 { margin: 0; font-size: 2.5em; }
-        p { font-size: 1.2em; }
-        section { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
-        .features { display: flex; justify-content: space-around; flex-wrap: wrap; }
-        .feature { width: 30%; min-width: 250px; margin: 15px; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .feature:hover { transform: translateY(-5px); }
-        button { background: #28a745; color: white; border: none; padding: 15px 30px; font-size: 1.1em; border-radius: 5px; cursor: pointer; }
-        button:hover { background: #218838; }
-        #pricing { background: #e9ecef; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin: 10px 0; padding: 10px; background: white; border-radius: 5px; }
-        footer { background: #333; color: white; text-align: center; padding: 30px; }
-        @media (max-width: 768px) { .feature { width: 100%; } h1 { font-size: 2em; } }
-    </style>
+    <title>Symbiot — ИИ для Стартапов | Масштабируйте Идею с AI</title>
+    <meta name="description" content="Symbiot: Локальный ИИ-помощник для стартапов. Анализируйте данные, автоматизируйте, готовьтесь к инвестициям. Конфиденциально и просто.">
+    <link rel="canonical" href="https://symbiot.by/">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/lucide@latest/dist/umd/lucide.js" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
 </head>
-<body>
-    <header>
-        <h1>Symbiot - Ваш ИИ-Партнёр для Бизнеса</h1>
-        <p>Локальная AI-система для анализа звонков, переписки и продаж. 100% конфиденциальность без облака.</p>
-        <br>
-        <button onclick="document.getElementById('contacts').scrollIntoView();">Запросить Демо</button>
-    </header>
-    
-    <section id="problems">
-        <h2>Проблемы, которые мы решаем</h2>
-        <ul>
-            <li>Тонуть в рутине и ручном управлении командой</li>
-            <li>Недоверие к сотрудникам и отсутствие контроля</li>
-            <li>Неполная картина данных о клиентах и продажах</li>
-        </ul>
-    </section>
-    
-    <section id="solution">
-        <h2>Решение от Symbiot</h2>
-        <p>Symbiot — это серверная AI-система, которая работает локально в вашем офисе. Мы анализируем звонки (транскрипция на белорусском/русском), переписку, продажи и даём actionable insights: прогнозы, рекомендации, персональные ассистенты для команды.</p>
-        <p>Техстек: Whisper для транскрипции, Local LLM для анализа, OpenWebUI для чата.</p>
-    </section>
-    
-    <section id="features">
-        <h2>Ключевые Возможности</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Транскрипция и Анализ Звонков</h3>
-                <p>Автоматическая расшифровка на BY/RU, распознавание эмоций, выявление паттернов в общении.</p>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-600">Symbiot</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600">Функции</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-blue-600">Цены</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Контакты</a>
+                </div>
             </div>
-            <div class="feature">
-                <h3>Анализ Продаж и Переписки</h3>
-                <p>Прогнозы продаж, выявление болевых точек клиентов, рекомендации по оптимизации.</p>
-            </div>
-            <div class="feature">
-                <h3>Персональные AI-Ассистенты</h3>
-                <p>Чат-интерфейс для команды: быстрые insights, автоматизация рутины.</p>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-20 pb-20 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">ИИ-Помощник для Стартапов</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Масштабируйте вашу идею с локальным AI. Анализируйте рынок, автоматизируйте рутину, готовьтесь к питчу для инвесторов. 100% конфиденциально — без облака.</p>
+            <div class="space-x-4">
+                <button onclick="scrollTo('contact')" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">Запросить Демо</button>
+                <a href="#features" class="text-white underline">Узнать больше</a>
             </div>
         </div>
     </section>
-    
-    <section id="pricing">
-        <h2>Ценообразование и Установка</h2>
-        <p><strong>Early Adopter Программа:</strong> 70% скидка на полный пакет (оборудование + установка + 6 месяцев поддержки). <strong>Осталось 7/10 мест!</strong></p>
-        <p>Установка: 5 дней. Привозим готовый сервер (Intel/AMD + NVIDIA RTX 4090), настраиваем, обучаем команду.</p>
-        <p>Стандартный тариф стартует с марта 2025.</p>
-    </section>
-    
-    <section id="testimonials">
-        <h2>Что говорят Клиенты</h2>
-        <div class="features">
-            <div class="feature">
-                <p>"Снижение возвратов на 30%, рост прибыли!" — Владелец магазина электроники.</p>
-            </div>
-            <div class="feature">
-                <p>"AI видит то, что мы упускали в звонках." — Менеджер по продажам.</p>
+
+    <!-- Problems for Startups -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Проблемы, которые мы решаем</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 border rounded-lg shadow-md">
+                    <i data-lucide="zap" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mb-2">Рутина вместо роста</h3>
+                    <p>Основатели тратят время на анализ данных вместо инноваций. Symbiot автоматизирует рутину.</p>
+                </div>
+                <div class="text-center p-6 border rounded-lg shadow-md">
+                    <i data-lucide="shield" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mb-2">Конфиденциальность идей</h3>
+                    <p>Боитесь утечек в облаке? Наша AI работает локально на вашем сервере — данные не уходят.</p>
+                </div>
+                <div class="text-center p-6 border rounded-lg shadow-md">
+                    <i data-lucide="trending-up" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mb-2">Подготовка к инвестициям</h3>
+                    <p>Анализ рынка, прогнозы роста, insights для питча — всё готово за 5 дней установки.</p>
+                </div>
             </div>
         </div>
     </section>
-    
-    <section id="contacts">
-        <h2>Свяжитесь с Нами</h2>
-        <p>Телефон: +375 (33) 688-75-18</p>
-        <p>Telegram: <a href="https://t.me/SymbiotAIbot">@SymbiotAIbot</a></p>
-        <p>Email: symbiot@cil.by</p>
-        <button onclick="alert('Заявка отправлена! Мы свяжемся скоро.')">Отправить Заявку</button>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Ключевые функции для стартапов</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i data-lucide="headphones" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mb-2">Анализ звонков и клиентских взаимодействий</h3>
+                    <p>Транскрипция на RU/BY языках, анализ эмоций, insights для улучшения продукта.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i data-lucide="bar-chart-3" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mb-2">Рыночный анализ и прогнозы</h3>
+                    <p>Обработка данных о продажах, конкурентах, trends для data-driven решений.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i data-lucide="bot" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mb-2">Персональные AI-ассистенты</h3>
+                    <p>Чат-интерфейс для команды: быстрые ответы на вопросы о бизнесе и автоматизация задач.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 Symbiot. Создано с помощью Cody AI. Все права защищены.</p>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Ценообразование для стартапов</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Early Adopter</h3>
+                    <p class="text-4xl font-bold text-blue-600 mb-4">70% скидка</p>
+                    <ul class="space-y-2 mb-6">
+                        <li>✓ Сервер с NVIDIA RTX 4090</li>
+                        <li>✓ Установка за 5 дней</li>
+                        <li>✓ 6 месяцев поддержки</li>
+                        <li>✓ Обучение команды</li>
+                        <li>✓ Разовая оплата</li>
+                    </ul>
+                    <p class="text-sm text-gray-500 mb-4">Осталось 7/10 мест</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Standard</h3>
+                    <p class="text-gray-500 mb-4">С марта 2025</p>
+                    <ul class="space-y-2 mb-6">
+                        <li>✓ Полный функционал</li>
+                        <li>✓ Ежемесячная поддержка</li>
+                        <li>✓ Масштабирование</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Что говорят основатели</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="mb-4">'Symbiot помог нам подготовить данные для инвесторов за неделю. Рост на 30%!'</p>
+                    <p class="font-semibold">— Иван, CTO Startup X</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="mb-4">'Локальный AI — это безопасность. Анализ звонков дал insights, которые изменили наш MVP.'</p>
+                    <p class="font-semibold">— Мария, Founder Y</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8">Начните с Symbiot сегодня</h2>
+            <p class="mb-8">Свяжитесь для демо и консультации по интеграции в ваш стартап.</p>
+            <div class="space-y-4 max-w-md mx-auto">
+                <p><strong>Телефон:</strong> +375 (33) 688-75-18</p>
+                <p><strong>Telegram:</strong> <a href="https://t.me/SimbiotAIbot">@SimbiotAIbot</a></p>
+                <p><strong>Email:</strong> <a href="mailto:simbiot@cil.by">simbiot@cil.by</a></p>
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700">Отправить заявку</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <p>&copy; 2025 Symbiot. Создано с помощью Cody. Все права защищены.</p>
     </footer>
 
     <script>
-        // Простая навигация
-        console.log('Новый Symbiot сайт готов!');
+        lucide.createIcons();
+        function scrollTo(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
     </script>
 </body>
 </html>
